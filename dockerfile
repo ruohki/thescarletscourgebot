@@ -2,7 +2,7 @@ FROM node:lts-alpine3.14 as builder
 WORKDIR /
 COPY . /
 RUN npm install
-RUN npm build
+RUN npm run build
 
 
 FROM node:lts-alpine3.14
