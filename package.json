@@ -1,0 +1,28 @@
+{
+  "name": "abo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/main.ts",
+    "build": "tsc -p .",
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.171",
+    "@types/node": "^16.4.3",
+    "@types/node-fetch": "^2.5.12",
+    "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "blizzapi": "^2.0.2",
+    "discord.js": "^12.5.3",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
+    "npm": "^7.20.1"
+  }
+}
