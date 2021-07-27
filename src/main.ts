@@ -112,7 +112,7 @@ const updateRooster = async () => {
 
       const channel = await message.author.createDM();
       await channel.send(`Here are some free names for you to choose from: **${names.join(", ")}**`);
-      await message.reply(`As requested i've send you five possible names that are curently free to pick!`);
+      await message.reply(`As requested i've send you five possible names that are currently free to pick!`);
     }
   });
 
