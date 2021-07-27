@@ -98,6 +98,7 @@ const updateRooster = async () => {
 
   client.on('ready', () => {
     console.log(`Logged in as ${client?.user?.tag}!`);
+    Log("Setting status...", "Info");
     client.user?.setPresence({
       activity: {
         name: "!nameme"
