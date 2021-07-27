@@ -15,7 +15,8 @@
     "@types/lodash": "^4.14.171",
     "@types/node": "^16.4.3",
     "@types/node-fetch": "^2.5.12",
-    "ts-node-dev": "^1.1.8"
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
     "blizzapi": "^2.0.2",
