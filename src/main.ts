@@ -83,11 +83,11 @@ const api = new BlizzAPI({
 
 const updateRooster = async () => {
   Log("Updating Guild Rooster");
-  const data = await api.query('/data/wow/guild/ravencrest/the-scarlet-scourge/roster?namespace=profile-eu');
+  const main = await api.query('/data/wow/guild/ravencrest/the-scarlet-scourge/roster?namespace=profile-eu');
+  const alt = await api.query('/data/wow/guild/ravencrest/the-scarlet-kingdom/roster?namespace=profile-eu');
   Log("Rooster updated");
-  return lodash.map(data.members, 'character.name');
+  return lodash.map([...main.members, ...alt.members], 'character.name');
 }
-
 (async () => {
   const client = new Client();
 
